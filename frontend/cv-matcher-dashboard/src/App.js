@@ -23,7 +23,7 @@ function App() {
     try {
       setLoading(true);
 
-      const response = await fetch("http://localhost:5000/analyze", {
+      const response = await fetch("https://ai-cv-matcher-1.onrender.com", {
         method: "POST",
         body: formData,
       });
