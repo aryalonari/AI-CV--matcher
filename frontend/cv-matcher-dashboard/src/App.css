@@ -1,0 +1,118 @@
+.app {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f7fb;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: #2c3e50;
+}
+
+.header p {
+  color: #6c757d;
+}
+
+.card,
+.results-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 0 auto 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+label {
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+}
+
+.analyze-btn,
+.export-btn {
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.analyze-btn:hover,
+.export-btn:hover {
+  opacity: 0.9;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.score-bar {
+  background: #e5e7eb;
+  border-radius: 10px;
+  position: relative;
+  height: 20px;
+}
+
+.score-fill {
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+  height: 100%;
+  border-radius: 10px;
+}
+
+.score-bar span {
+  position: absolute;
+  top: -22px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.badge.shortlisted {
+  background: #22c55e;
+}
+
+.badge.review {
+  background: #facc15;
+  color: #000;
+}
+
+.badge.rejected {
+  background: #ef4444;
+}

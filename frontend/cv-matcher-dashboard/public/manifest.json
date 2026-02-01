@@ -1,0 +1,10 @@
+{
+  "short_name": "CV Matcher",
+  "name": "AI CV Matcher Dashboard",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#4f46e5",
+  "background_color": "#ffffff"
+}
+
