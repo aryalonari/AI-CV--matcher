@@ -9,6 +9,9 @@ import OpenAI from "openai";
 
 dotenv.config();
 
+// ✅ Debug: check if API key is loaded
+console.log("OPENAI_API_KEY loaded:", process.env.OPENAI_API_KEY ? "Yes" : "No");
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -83,6 +86,8 @@ Return STRICT JSON only:
 
         aiResult = JSON.parse(completion.choices[0].message.content);
       } catch (err) {
+        // ✅ Debug: show exact OpenAI error
+        console.error("OpenAI error:", err.message);
         console.log("⚠️ OpenAI unavailable — using fallback");
 
         const score = Math.floor(Math.random() * 30) + 60;
